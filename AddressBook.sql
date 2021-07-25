@@ -1,13 +1,7 @@
-#uc7 Ability to understand the size of address book by City and State
+#uc8  Retrieve entries sorted alphabetically by Person’s name for a given city
 
-#size of address book by city
 SELECT 
-    COUNT(city) AS NumberOfaddress_book
+    firstName,city
 FROM
-    address_book;
-
-#size of address book by state
-SELECT 
-    COUNT(state) AS NumberOfaddress_book
-FROM
-    address_book;
+    address_book
+ORDER BY firstName;
