@@ -1,6 +1,13 @@
-#uc1 create Addesss_book_service Database
+#uc2  create table for database
 
-create database address_book_service;
-show databases;
-use address_book_service;
-
+CREATE TABLE address_book(
+    firstName VARCHAR(30) NOT NULL,
+    lastName VARCHAR(30) NOT NULL,
+    address VARCHAR(50) NOT NULL,
+    city VARCHAR(20) NOT NULL,
+    state VARCHAR(20) NOT NULL,
+    zip VARCHAR(10) NOT NULL,
+    phoneNo VARCHAR(15) NOT NULL,
+    email VARCHAR(15) NOT NULL,
+    PRIMARY KEY (firstName)
+);
