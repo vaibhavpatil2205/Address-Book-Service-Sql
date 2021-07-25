@@ -1,13 +1,5 @@
-#uc4  Edit existing contact person using their name
+#uc5  Delete person using FirstName
 
-UPDATE address_book 
-SET 
-    phoneNo = '955554'
+DELETE FROM `address_book` 
 WHERE
-    firstName = 'Vaibhav';
-
-UPDATE address_book 
-SET 
-    lastName = 'Abc'
-WHERE
-    firstName = 'Prajwal';
+    `firstName` = 'Sunny';
